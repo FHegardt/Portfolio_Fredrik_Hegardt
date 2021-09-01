@@ -18,9 +18,19 @@ Det kan behövas mycket tid att bearbeta datan om den kommer från olika källor
 
 ## Steg 2 - Maskininlärningsprocessen och linjär regression
 
-https://www.javatpoint.com/linear-regression-in-machine-learning
+När är alla de första stegen är klara, datan är strukturerad och tvättad, så kommer vi dela upp data i tre olika data-set. Jag förklarar varför nedan.
 
-bygga olika datasets med träningsdata.
+1. Träningsdata - Den data vi använder för att initialt träna vår modell, sätta parametrar och olika lager.
+
+2. Valideringdata - Data som vi använder för att testa att vår modell ger tillförlitliga svar efter att den har blivit tränad. Här har vi chans att skruva på parametrarna för att förbättra modellen.
+3. Test-set - Sist men inte minst behöver vi en sista set med data, detta för att kunna testa vår modell på verklig data som den inte har sett förut. Ett sista valideringstest helt enkelt, där vi får fram resultatet av modellen innan vi går ut med den på riktigt. (1)
+
+När datan är uppdelad i tre olika set så kan vi äntligen påbörja vår träning av modellen genom maskininlärning. Det finns oerhört många olika algoritmer och sätt att träna en modell, här kommer jag kort beskriva linjär regression som är ett väldigt vanligt sätt att lära system. (4)
+
+Kortfattat så använder man linjär regression för att hitta sambandet mellan två olika datatyper, i vårt fall skulle det exempelvis kunna vara att hitta sambandet mellan huspriser och kvm-yta. Ett sätt att visualisera datan är att skapa en plot med x- och y-linjer där man sätter en markör för varje objekt. Huspriser löper längs x-axeln och kvm-ytan längs y-axeln. När man har markerat tillräckligt antal prickar så kommer det gå att se ett samband, om det finns ett, mellan x & y. Vanligtvis så går det att dra en linje, såkallad regressionslinje, vilket förklarar sambandet mellan x & y.
+
+Detta gör att modellen i nästa steg, när den får ny data, kommer kunna ge förutsägelser om x när den bara har tillgång till y eller vice verca. (4)
+
 ## Steg 3 - Driftsättning
 
 Det sista steget blir att driftsätta modellen. För att säkrast driftsätta den här typen av modell hade jag använt en betaversion som en sista del av testning, innan jag driftsatt det fullt ut publikt.
@@ -34,4 +44,5 @@ Länkar:
 1. https://www.run.ai/guides/machine-learning-engineering/machine-learning-workflow/
 2. codebaseball.com
 3. https://sv.wikipedia.org/wiki/Databas
+4. https://www.javatpoint.com/linear-regression-in-machine-learning
 
